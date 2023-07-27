@@ -1,0 +1,536 @@
+html {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+hr {
+    background-color: #C4DFDF;
+    border: none;
+    height: 0.25rem;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F1F1;
+    margin: 0;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin-block: unset;
+    margin-inline: unset;
+    padding-block: unset;
+    padding-inline: unset;
+}
+
+h4, h5, h6 {
+    font: inherit;
+    margin-block: unset;
+    margin-inline: unset;
+}
+
+li {
+    margin: 1rem;
+}
+
+input, select, textarea {
+    appearance: none;
+    background-color: inherit;
+    border: unset;
+    color: inherit;
+    font: inherit;
+    margin: unset;
+    outline: none;
+    padding: unset;
+}
+
+.Title{
+    width: 100%;
+    padding: 1rem;
+    border-top: 0.25rem solid #C4DFDF;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cover {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.25rem);
+    background-color: #21212160;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition-duration: 250ms;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    z-index: 8;
+}
+
+#cover.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#menu {
+    width: 20rem;
+    height: 100%;
+    background-color: #D2E9E9;
+    position: fixed;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menu > .info_container {
+    background-color: #fafafa;
+    border: 0.125rem solid #C4DFDF;
+    border-radius: 0.5rem;
+}
+
+#menu > .info_container > .info {
+    font-size: 1rem;
+    text-align: center;
+    color: #666666;
+}
+
+#menu > .info_container > .info > img{
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+#menu > .menu_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu > .menu_container > .list {
+    width: 20rem;
+    background-color: #C4DFDF;
+
+    appearance: none;
+    border: none;
+    border-bottom: 0.125rem solid #D2E9E9;
+    color: #666666;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-style: oblique;
+}
+
+#menu > .menu_container > .list:last-child{
+    border-bottom: none;
+}
+
+#menu > .menu_container >.list:hover {
+    background-color: #D2E9E9;
+}
+
+#menu > .menu_container > .list:active {
+    background-color: #E3F4F4;
+}
+
+#mainForm {
+    margin-left: 20rem;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainForm > .hi {
+    margin-top: auto;
+    width: inherit;
+    padding: 2.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mainForm > .hi > .hello {
+    height: 10rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+
+#mainForm > .hi > .aboutMe {
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: pre;
+}
+
+#resumeForm {
+    margin-left: 20rem;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resumeForm > .educationContainer {
+    width: 90%;
+    background-color: #fafafa;
+    border: 0.125rem solid #C4DFDF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resumeForm > .educationContainer > .education {
+    width: 80%;
+    border: 0.125rem solid #C4DFDF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    text-align: center;
+    white-space: pre;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resumeForm > .educationContainer > .education > .school {
+    width: 2rem;
+}
+
+#resumeForm > .educationContainer > .next {
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#resumeForm > .Title > img {
+    width: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+#resumeForm > .graph-container {
+    width: 90%;
+    background-color: #fafafa;
+    border: 0.125rem solid #C4DFDF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#resumeForm > .graph-container > ul > .stackName > img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+#resumeForm > .graph-container > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#resumeForm > .graph-container > ul > .stackName{
+    display: flex;
+    justify-content: center;
+}
+
+#resumeForm > .graph-container > ul > .img_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#resumeForm > .graph-container > ul > .img_container > img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.5rem;
+}
+
+#resumeForm > .graph-container > ul > .img_container > .li {
+    width: 100%;
+    background-color: #D2E9E9;
+    border-radius: 0.325rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#resumeForm > .graph-container > ul > .img_container > .li > div > .percent {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+#resumeForm > .graph-container > ul > .img_container > .li > div > .stack {
+    padding: 0.25rem 0.5rem 0.15rem;
+    background-color: #C4DFDF;
+    border-bottom: 0.125rem solid #F8F6F4;
+}
+
+#resumeForm > .graph-container > .front-graph > .img_container > .li > .html > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 75%;
+}
+
+#resumeForm > .graph-container > .front-graph > .img_container > .li > .css > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 65%;
+}
+
+#resumeForm > .graph-container > .front-graph > .img_container > .li > .js > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 60%;
+}
+
+#resumeForm > .graph-container > .back-graph {
+    border-top: 0.125rem solid #C4DFDF;
+    border-bottom: 0.125rem solid #C4DFDF;
+}
+
+#resumeForm > .graph-container > .back-graph > .img_container > .li > .java > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 80%;
+}
+
+#resumeForm > .graph-container > .back-graph > .img_container > .li > .springBoot > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 70%;
+}
+
+#resumeForm > .graph-container > .db-graph > .img_container > .li > .mariaDb > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 80%;
+}
+
+#resumeForm > .graph-container > .db-graph > .img_container > .li > .mySql > .percent {
+    background-color: #B0DAFF;
+    height: 100%;
+    width: 60%;
+}
+
+#resumeForm > .graph-container > ul > .img_container > .li > div > .percent {
+    text-align: right;
+}
+
+#skillForm {
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    max-height: calc(100vh - 2rem);
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0.0625rem #21212145;
+    box-sizing: border-box;
+    opacity: 0;
+    overflow: hidden auto;
+    pointer-events: none;
+    position: fixed;
+    transform: scale(95%) translate(-50%, -50%);
+    transform-origin: top left;
+    transition-duration: 250ms;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    z-index: 9;
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#skillForm.visible {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: all;
+    transform: scale(100%) translate(-50%, -50%);
+}
+
+#skillForm > .header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+}
+
+#skillForm > .header > img {
+    width: 2rem;
+}
+
+#skillForm > .skill-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#skillForm > .skill-container > .label {
+    border: 0.125rem solid #F8E8EE;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0 1rem 0.5rem;
+    width: 5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skillForm > .skill-container > .label:has(> .option:checked) {
+    background-color: #0288d1;
+    border: 0.0625rem solid #0288d1;
+    color: #ffffff;
+}
+
+#skillForm > .div {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.125rem solid #F8E8EE;
+    margin-bottom: 0.25rem;
+}
+
+#skillForm > .field {
+    border: 0.125rem solid #F8E8EE;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    padding: 0 1rem;
+}
+
+#skillForm > .field > .span {
+    text-align: left;
+    white-space: pre-line;
+    font: inherit;
+}
+
+#skillForm > .front-container,
+#skillForm > .back-container,
+#skillForm > .db-container {
+    display: none;
+}
+
+#skillForm > .front-container.visible,
+#skillForm > .back-container.visible,
+#skillForm > .db-container.visible {
+    display: block;
+}
+
+#projectForm {
+    margin-left: 20rem;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectForm > .project {
+    width: 90%;
+    background-color: #fafafa;
+    border: 0.125rem solid #C4DFDF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+
+}
+
+#projectForm > .project > .profile {
+    width: 20rem;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+#projectForm > .project > img{
+    min-width: 20rem;
+    min-height: 20rem;
+}
+
+#etcForm {
+    margin-left: 20rem;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#etcForm > div{
+    width: 90%;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+
+}
+
+#etcForm > div > a {
+    display: flex;
+    justify-content: center;
+}
+
+#etcForm > div > a > img {
+    width: 3rem;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate .percent {
+    animation: moveIn 1s ease-in-out;
+}
+
+
+@media (max-width: 1100px) {
+    #menu, #etcForm, #projectForm, #resumeForm, #mainForm {
+        margin-left: 0;
+    }
+}

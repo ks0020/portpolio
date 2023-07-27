@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/portfolio.css}">
+    <script defer th:src="@{/resources/scripts/portfolio.js}"></script>
+</head>
+<a name="home"></a>
+<body id="body">
+<div id="cover"></div>
+<div id="menu" class="fixed">
+    <ul class="info_container">
+        <li class="info">
+            <img alt="" th:src="@{/resources/images/profile.png}">
+        </li>
+        <li class="info">이석민</li>
+        <li class="info">010 5742 5206</li>
+        <li class="info">kssk0020@naver.com</li>
+        <li class="info">INFP</li>
+    </ul>
+    <div class="menu_container">
+        <a href="#home" class="list">Home</a>
+        <a href="#resume" class="list">Resume</a>
+        <a href="#project" class="list">Project</a>
+        <a href="#etc" class="list">etc...</a>
+    </div>
+</div>
+<form id="mainForm" class="main">
+    <div class="hi">
+        <div class="hello">
+            <p class="hello_typing"></p>
+        </div>
+    </div>
+</form>
+<a name="resume"></a>
+<form id="resumeForm" class="main">
+    <h2 class="Title"><img th:src="@{/resources/images/school.png}" alt="" class="school">Education</h2>
+    <div class="educationContainer">
+        <div class="education">
+            <h4>Korea IT</h4>
+            <span>2023/02 ~ 2023/08</span>
+            <div>교육 교육 교육을 받음</div>
+        </div>
+        <img class="next" th:src="@{/resources/images/up.png}" alt="">
+        <div class="education">
+            <h4>계명 문화대학교 / 사회복지상담과</h4>
+            <span>2018/09 ~ 2019/08</span>
+        </div>
+        <img class="next" th:src="@{/resources/images/up.png}" alt="">
+        <div class="education">
+            <h4>대구 미래대학교 / 음악심리재활과</h4>
+            <span>2015/02 ~ 2016/10</span>
+        </div>
+        <img class="next" th:src="@{/resources/images/up.png}" alt="">
+        <div class="education">
+            <h4>대구 심인고등학교</h4>
+            <span>2013/08 ~ 2015/02</span>
+        </div>
+        <img class="next" th:src="@{/resources/images/up.png}" alt="">
+        <div class="education">
+            <h4>경산 진량고등학교</h4>
+            <span>2012/02 ~ 2013/07</span>
+        </div>
+    </div>
+    <h2 class="Title">Tech Stack
+        <img class="link plusForm" th:src="@{/resources/images/plus.png}" alt=""> </h2>
+    <div class="graph-container">
+        <ul class="front-graph">
+            <div class="stackName">
+                <h3>Front-End</h3>
+                <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('front-graph')" alt="">
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/HTML.png}" alt="">
+                <li class="li">
+                    <div class="html">
+                        <h4 class="stack">HTML</h4>
+                        <div class="percent"><strong>75%</strong></div>
+                    </div>
+                </li>
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/CSS.png}" alt="">
+                <li class="li">
+                    <div class="css">
+                        <h4 class="stack">CSS</h4>
+                        <div class="percent"><strong>65%</strong></div>
+                    </div>
+                </li>
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/JS.png}" alt="">
+                <li class="li">
+                    <div class="js">
+                        <h4 class="stack">JavaScript</h4>
+                        <div class="percent"><strong>60%</strong></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <ul class="back-graph">
+            <div class="stackName">
+                <h3>Back-End</h3>
+                <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('back-graph')" alt="">
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/Java.png}" alt="">
+                <li class="li">
+                    <div class="java">
+                        <h4 class="stack">Java</h4>
+                        <div class="percent"><strong>80%</strong></div>
+                    </div>
+                </li>
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/Springboot.png}" alt="">
+                <li class="li">
+                    <div class="springBoot">
+                        <h4 class="stack">SpringBoot</h4>
+                        <div class="percent"><strong>70%</strong></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <ul class="db-graph">
+            <div class="stackName">
+                <h3>DBMS</h3>
+                <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('db-graph')" alt="">
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/mariaDB.png}" alt="">
+                <li class="li">
+                    <div class="mariaDb">
+                        <h4 class="stack">mariaDB</h4>
+                        <div class="percent"><strong>80%</strong></div>
+                    </div>
+                </li>
+            </div>
+            <div class="img_container">
+                <img th:src="@{/resources/images/Mysql.png}" alt="">
+                <li class="li">
+                    <div class="mySql">
+                        <h4 class="stack">MySQL</h4>
+                        <div class="percent"><strong>60%</strong></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+</form>
+<form id="skillForm">
+    <header class="header">
+        <img class="cancel" th:src="@{/resources/images/cancel.png}" alt="">
+    </header>
+    <div class="skill-container">
+        <label class="label front">
+            <input class="option frontBtn" name="option" type="radio" value="front">
+            <span class="text">Front-End</span>
+        </label>
+        <label class="label back">
+            <input class="option backBtn" name="option" type="radio" value="back">
+            <span class="text">Back-End</span>
+        </label>
+        <label class="label dbms">
+            <input class="option dbBtn" name="option" type="radio" value="dbms">
+            <span class="text">DBMS</span>
+        </label>
+    </div>
+    <div class="div">
+        <span> 이런 공부를 했습니다! </span>
+    </div>
+    <section class="field front-container">
+            <span class="span">
+                HTML을 사용하여 웹 페이지의 기본 구조를 작성할 수 있습니다.
+                거기에 CSS를 이용해서 이미지, 색상, 레이아웃 등을 포함한 시각적인 디자인을 추가하여 웹 페이지를 꾸밀 수 있습니다.
+                또한, JavaScript를 사용해 웹 페이지에 상호작용이나 동적인 기능을 추가할 수 있습니다. 이를 통해 멋진 웹 페이지를 구현할 수 있습니다!
+
+            </span>
+    </section>
+    <section class="field back-container">
+            <span class="span">
+                Java 언어의 기본 문법, 데이터 타입, 반복문 등을 이해하고 활용할 수 있으며, 배열과 조건문, 클래스와 변수에 대한 이해와 사용이 가능합니다.
+                또한, 메서드와 함수의 정의와 호출, 예외 처리 등을 이해하고 사용할 수 있습니다. 객체 지향 프로그래밍의 개념을 숙지하여 클래스와 객체를 설계하고 상속, 다형성, 인터페이스를 활용할 수 있습니다!
+
+                그리고 Spring Boot를 이용하여 웹 애플리케이션을 구축할 때는 Spring MVC를 활용하여 요청과 응답을 처리하는 컨트롤러를 작성할 수 있습니다. 또한, 의존성 주입을 통해 컴포넌트 간의 결합도를 낮추고 유지보수성을 향상시킬 수 있습니다.
+
+            </span>
+    </section>
+    <section class="field db-container">
+            <span class="span">
+                주로 MariaDB를 사용하여 데이터베이스 작업을 수행하며, 쿼리를 작성하여 웹에서 작업한 내용을 저장하고 SELECT와 INSERT를 통해 데이터를 불러오고 삽입할 수 있습니다. 또한, UPDATE를 통해 데이터를 수정할 수 있습니다.
+
+                MySQL도 마찬가지로 유사한 수준으로 활용할 수 있습니다. 이를 토대로 데이터베이스를 효과적으로 관리할 수 있습니다!
+
+            </span>
+    </section>
+</form>
+<a name="project"></a>
+<form id="projectForm" class="main">
+    <h2 class="Title">Project</h2>
+    <div class="project">
+        <img class="profile" th:src="@{/resources/images/맛집.png}" alt=>
+        <ul class="ul">
+            <li><h3>matzip - 맛을 담다</h3></li>
+            <li>참가 인원 : 교육용(원생 전체)</li>
+            <li>사용언어 :HTML / CSS / Java / JavaScript / springboot / jdbc / mybatis / mariaDB</li>
+            <li>내용 : 우리 주변의 맛집을 알려주는 웹 사이트를 구현 해보았습니다.</li>
+            <li>기간 : 23/04 ~ 23/05 (약 한달)</li>
+            <li>주소 : <a href="https://github.com/ks0020/matzip" target="_blank">https://github.com/ks0020/matzip</a></li>
+        </ul>
+    </div>
+    <div class="project">
+        <img class="profile" th:src="@{/resources/images/portfolio.png}" alt=>
+        <ul class="ul">
+            <li><h3>포트폴리오</h3></li>
+            <li>참가 인원 : 1인</li>
+            <li>사용언어 : HTML / CSS / JavaScript</li>
+            <li>내용 : 백엔드 개발자로서의 처음부터의 학습과 성과를 정리한 자기소개 포트폴리오입니다!</li>
+            <li>기간 : 23/04 ~ 23/05 (2주간)</li>
+            <li>주소 : <a href="#" target="_blank">차후 수정 예정</a></li>
+        </ul>
+    </div>
+    <div class="project">
+        <img class="profile" th:src="@{/resources/images/imageLogo01.png}" alt=>
+        <ul class="ul">
+            <li><h3>Deulsal-E</h3></li>
+            <li>참가 인원 : 5인 (Team.ifor)</li>
+            <li>사용언어 : HTML / CSS / JavaScript / SpringBoot / Thymleaf / mariaDB</li>
+            <li>내용 : Deulsal-E는 일반 캠핑장은 물론, 클램핑, 카라반 등 다양한 유형의 캠핑장을 구분하여 추천하고 자유로히 예약할 수 있습니다.
+                클라이언트들은 방문한 캠핑장에 대한 리뷰를 자유롭게 작성하여 다른 이용자들과 정보를 공유할 수 있습니다.
+                또한 캠핑장 운영자들은 자신의 사업장을 등록하고 이벤트를 진행하며, 예약 관리와 업데이트 등의 사업 운영을 간편하게 수행할 수 있습니다.</li>
+            <li>기간 : 23/06 ~ 23/08 (2개월)</li>
+            <li>주소 : <a href="#" target="_blank">차후 수정 예정</a></li>
+        </ul>
+    </div>
+    <!--    <div class="project">-->
+    <!--        <ul class="ul">-->
+    <!--            <li><h3></h3></li>-->
+    <!--            <li>참가 인원 : </li>-->
+    <!--            <li>사용언어 : </li>-->
+    <!--            <li>내용 : </li>-->
+    <!--            <li>기간 : </li>-->
+    <!--            <li>주소 : <a href="#" target="_blank">차후 수정 예정</a></li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+</form>
+<a name="etc"></a>
+<form id="etcForm" class="main">
+    <h2 class="Title">etc</h2>
+    <h3>더욱 노력하여 증진하는 이석민이 되겠습니다. 봐주셔서 감사합니다!</h3>
+    <div>
+        <a href="https://github.com/ks0020" target="_blank"><img th:src="@{/resources/images/github.png}" alt=""></a>
+        <a href="http://minscodingstory.tistory.com" target="_blank"><img th:src="@{/resources/images/tistory.png}" alt=""></a>
+        <a href="https://instagram.com/alchemist_mini?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img th:src="@{/resources/images/instagram.png}" alt=""></a>
+    </div>
+</form>
+</body>
+</html>

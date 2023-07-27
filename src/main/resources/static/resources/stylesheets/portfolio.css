@@ -486,6 +486,10 @@ input, select, textarea {
     min-height: 20rem;
 }
 
+#projectForm > .project > .ul > li {
+    white-space: pre-line;
+}
+
 #etcForm {
     margin-left: 20rem;
     height: auto;

@@ -478,14 +478,16 @@ input, select, textarea {
     margin-bottom: 1rem;
     overflow: hidden;
 
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 20rem 30rem;
+    display: flex;
     align-items: center;
 
 }
 
 #projectForm > .project > .profile {
+    width: 25rem;
+}
+
+#projectForm > .project > .ul {
     width: 100%;
 }
 

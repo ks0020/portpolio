@@ -4,6 +4,7 @@ html {
 
 a {
     text-decoration-line: none;
+    /*color: black;*/
 }
 
 hr {
@@ -18,6 +19,10 @@ body {
     height: 100%;
     background-color: #F6F1F1;
     margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 ol, ul {
@@ -36,6 +41,7 @@ h4, h5, h6 {
 
 li {
     margin: 1rem;
+    list-style: none;
 }
 
 input, select, textarea {
@@ -470,25 +476,47 @@ input, select, textarea {
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 
-    display: flex;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 20rem 30rem;
+    align-items: center;
 
 }
 
 #projectForm > .project > .profile {
-    width: 20rem;
-    overflow: hidden;
-    border-radius: 0.25rem;
-}
-
-#projectForm > .project > img{
-    min-width: 20rem;
-    min-height: 20rem;
+    width: 100%;
 }
 
 #projectForm > .project > .ul > li {
     white-space: pre-line;
 }
+
+#projectForm > .project > .ul > li:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+#projectForm > .project > .ul > li > a {
+    width: 10rem;
+    height: 3rem;
+    background-color: #C4DFDF;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #F8E8EE;
+    color: #666666;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#projectForm > .project > .ul > li > a:hover {
+    background-color: #fafafa;
+    color: black;
+
+}
+
 
 #etcForm {
     margin-left: 20rem;

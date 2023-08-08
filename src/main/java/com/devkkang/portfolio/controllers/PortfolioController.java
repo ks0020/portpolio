@@ -13,6 +13,7 @@ public class PortfolioController {
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
     public ModelAndView getPortfolio() {
+
         return new ModelAndView("portfolio");
     }
 

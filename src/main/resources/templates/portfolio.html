@@ -38,12 +38,11 @@
 </form>
 <a name="resume"></a>
 <form id="resumeForm" class="main">
-    <h2 class="Title"><img th:src="@{/resources/images/school.png}" alt="" class="school">Education</h2>
+    <h1 class="Title"><img th:src="@{/resources/images/school.png}" alt="" class="school">Education</h1>
     <div class="educationContainer">
         <div class="education">
-            <h4>Korea IT</h4>
+            <h4>Korea IT 아카데미</h4>
             <span>2023/02 ~ 2023/08</span>
-            <div>교육 교육 교육을 받음</div>
         </div>
         <img class="next" th:src="@{/resources/images/up.png}" alt="">
         <div class="education">
@@ -66,12 +65,12 @@
             <span>2012/02 ~ 2013/07</span>
         </div>
     </div>
-    <h2 class="Title">Tech Stack
-        <img class="link plusForm" th:src="@{/resources/images/plus.png}" alt=""> </h2>
+    <h1 class="Title">Tech Stack
+        <img class="link plusForm" th:src="@{/resources/images/plus.png}" alt=""> </h1>
     <div class="graph-container">
         <ul class="front-graph">
             <div class="stackName">
-                <h3>Front-End</h3>
+                <h2>Front-End</h2>
                 <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('front-graph')" alt="">
             </div>
             <div class="img_container">
@@ -104,7 +103,7 @@
         </ul>
         <ul class="back-graph">
             <div class="stackName">
-                <h3>Back-End</h3>
+                <h2>Back-End</h2>
                 <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('back-graph')" alt="">
             </div>
             <div class="img_container">
@@ -128,7 +127,7 @@
         </ul>
         <ul class="db-graph">
             <div class="stackName">
-                <h3>DBMS</h3>
+                <h2>DBMS</h2>
                 <img class="link" th:src="@{/resources/images/reset.png}" onclick="resetAnimation('db-graph')" alt="">
             </div>
             <div class="img_container">
@@ -201,41 +200,41 @@
 </form>
 <a name="project"></a>
 <form id="projectForm" class="main">
-    <h2 class="Title">Project</h2>
+    <h1 class="Title">Project</h1>
     <div class="project">
         <img class="profile" th:src="@{/resources/images/맛집.png}" alt=>
-        <ul class="ul">
-            <li><h3>matzip - 맛을 담다</h3></li>
+        <div class="ul">
+            <li><h2>matzip - 맛을 담다</h2></li>
             <li>참가 인원 : 교육용(원생 전체)</li>
             <li>사용언어 :HTML / CSS / Java / JavaScript / springboot / jdbc / mybatis / mariaDB</li>
             <li>내용 : 우리 주변의 맛집을 알려주는 웹 사이트를 구현 해보았습니다.</li>
-            <li>기간 : 23/04 ~ 23/05 (약 한달)</li>
-            <li>주소 : <a href="https://github.com/ks0020/matzip" target="_blank">https://github.com/ks0020/matzip</a></li>
-        </ul>
+            <li>기간 : 23/04 ~ 23/05</li>
+            <li><a href="https://github.com/ks0020/matzip" target="_blank">이동하기</a></li>
+        </div>
     </div>
     <div class="project">
         <img class="profile" th:src="@{/resources/images/portfolio.png}" alt=>
-        <ul class="ul">
-            <li><h3>포트폴리오</h3></li>
+        <div class="ul">
+            <li><h2>포트폴리오</h2></li>
             <li>참가 인원 : 1인</li>
             <li>사용언어 : HTML / CSS / JavaScript</li>
-            <li>내용 : 백엔드 개발자로서의 처음부터 학습과 성과를 정리한 자기소개 포트폴리오입니다!</li>
-            <li>기간 : 23/04 ~ 23/05 (2주간)</li>
-            <li>주소 : <a href="https://github.com/ks0020/portpolio" target="_blank">https://github.com/ks0020/portpolio</a></li>
-        </ul>
+            <li>내용 : 백엔드 개발자로서의 처음부터 학습과 성과로 만들어 본 자기소개 포트폴리오입니다.</li>
+            <li>기간 : 23/04 ~ 23/05</li>
+            <li><a href="https://github.com/ks0020/portpolio" target="_blank">이동하기</a></li>
+        </div>
     </div>
     <div class="project">
         <img class="profile" th:src="@{/resources/images/imageLogo01.png}" alt=>
-        <ul class="ul">
-            <li><h3>Deulsal-E</h3></li>
+        <div class="ul">
+            <li><h2>Deulsal-E</h2></li>
             <li>참가 인원 : 5인 (Team.ifor)</li>
             <li>사용언어 : HTML / CSS / JavaScript / SpringBoot / Thymleaf / mariaDB</li>
             <li>내용 : Deulsal-E는 일반 캠핑장은 물론, 클램핑, 카라반 등 다양한 유형의 캠핑장을 구분하여 추천하고 자유로히 예약할 수 있습니다.
                 클라이언트들은 방문한 캠핑장에 대한 리뷰를 자유롭게 작성하여 다른 이용자들과 정보를 공유할 수 있습니다.
                 또한 캠핑장 운영자들은 자신의 사업장을 등록하고 이벤트를 진행하며, 예약 관리와 업데이트 등의 사업 운영을 간편하게 수행할 수 있습니다.</li>
-            <li>기간 : 23/06 ~ 23/08 (2개월)</li>
-            <li>주소 : <a href="https://github.com/katiasoft/iforTeam" target="_blank">https://github.com/katiasoft/iforTeam</a></li>
-        </ul>
+            <li>기간 : 23/05 ~ 23/08</li>
+            <li><a href="https://github.com/katiasoft/iforTeam" target="_blank">이동하기</a></li>
+        </div>
     </div>
     <!--    <div class="project">-->
     <!--        <ul class="ul">-->

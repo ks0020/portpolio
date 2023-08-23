@@ -157,7 +157,7 @@
     </header>
     <div class="skill-container">
         <label class="label front">
-            <input class="option frontBtn" name="option" type="radio" value="front">
+            <input checked class="option frontBtn" name="option" type="radio" value="front">
             <span class="text">Front-End</span>
         </label>
         <label class="label back">
@@ -209,18 +209,23 @@
             <li>사용언어 :HTML / CSS / Java / JavaScript / springboot / jdbc / mybatis / mariaDB</li>
             <li>내용 : 우리 주변의 맛집을 알려주는 웹 사이트를 구현 해보았습니다.</li>
             <li>기간 : 23/04 ~ 23/05</li>
-            <li><a href="https://github.com/ks0020/matzip" target="_blank">이동하기</a></li>
+            <div class="button">
+                <a href="https://github.com/ks0020/matzip" target="_blank">코드보기</a>
+            </div>
         </div>
     </div>
     <div class="project">
         <img class="profile" th:src="@{/resources/images/portfolio.png}" alt=>
         <div class="ul">
-            <li><h2>포트폴리오</h2></li>
+            <li><h2>포트폴리오 사이트 구축</h2></li>
             <li>참가 인원 : 1인</li>
             <li>사용언어 : HTML / CSS / JavaScript</li>
             <li>내용 : 백엔드 개발자로서의 처음부터 학습과 성과로 만들어 본 자기소개 포트폴리오입니다.</li>
             <li>기간 : 23/04 ~ 23/05</li>
-            <li><a href="https://github.com/ks0020/portpolio" target="_blank">이동하기</a></li>
+            <div class="button">
+                <a href="https://github.com/ks0020/portpolio" target="_blank">코드보기</a>
+                <a href="#" target="_blank">이동하기</a>
+            </div>
         </div>
     </div>
     <div class="project">
@@ -228,17 +233,35 @@
         <div class="ul">
             <li><h2>Deulsal-E</h2></li>
             <li>참가 인원 : 5인 (Team.ifor)</li>
-            <li>사용언어 : HTML / CSS / JavaScript / SpringBoot / Thymleaf / mariaDB</li>
+            <li>사용언어 : HTML / CSS / JavaScript / Java /  SpringBoot / Thymleaf / mariaDB</li>
             <li>내용 : Deulsal-E는 일반 캠핑장은 물론, 클램핑, 카라반 등 다양한 유형의 캠핑장을 구분하여 추천하고 자유로히 예약할 수 있습니다.
                 클라이언트들은 방문한 캠핑장에 대한 리뷰를 자유롭게 작성하여 다른 이용자들과 정보를 공유할 수 있습니다.
                 또한 캠핑장 운영자들은 자신의 사업장을 등록하고 이벤트를 진행하며, 예약 관리와 업데이트 등의 사업 운영을 간편하게 수행할 수 있습니다.</li>
             <li>기간 : 23/05 ~ 23/08</li>
-            <li><a href="https://github.com/katiasoft/iforTeam" target="_blank">이동하기</a></li>
+            <div class="button">
+                <a href="https://github.com/ks0020/Deulsal-E" target="_blank">코드보기</a>
+                <a href="https://deulsale.devkkang.com" target="_blank">이동하기</a>
+            </div>
         </div>
     </div>
+        <div class="project">
+            <img class="profile" th:src="@{/resources/images/KFimageLogo.png}" alt="">
+            <ul class="ul">
+                <li><h2>KFootGlance</h2></li>
+                <li>참가 인원 : 1인</li>
+                <li>사용언어 : HTML / CSS / JavaScript / Java / SpringBoot / Thymleaf / mariaDB</li>
+                <li>내용 : KFootGlance는 해외에서 활약하는 대한민국의 축구선수들의 소식과, 그 해당 리그의 소식을 빠르게 접할수 있습니다. 또한 유저들간의 자유로운 소통으로 정보를 공유할 수 있습니다.</li>
+                <li>기간 : 23/08 ~ 현재 진행중</li>
+                <div class="button">
+                    <a href="https://github.com/ks0020/KFootGlance" target="_blank">코드보기</a>
+                    <a href="#" class="none" onclick="return false;" target="_blank">이동하기</a>
+                </div>
+            </ul>
+        </div>
     <!--    <div class="project">-->
+    <!--    <img src="" alt="" class="profile">-->
     <!--        <ul class="ul">-->
-    <!--            <li><h3></h3></li>-->
+    <!--            <li><h2></h2></li>-->
     <!--            <li>참가 인원 : </li>-->
     <!--            <li>사용언어 : </li>-->
     <!--            <li>내용 : </li>-->
@@ -250,7 +273,8 @@
 <a name="etc"></a>
 <form id="etcForm" class="main">
     <h2 class="Title">etc</h2>
-    <h3>더욱 노력하여 증진하는 이석민이 되겠습니다. 봐주셔서 감사합니다!</h3>
+    <h3>더욱 노력하여 증진하는 이석민이 되겠습니다.
+        봐주셔서 감사합니다!</h3>
     <div>
         <a href="https://github.com/ks0020" target="_blank"><img th:src="@{/resources/images/github.png}" alt=""></a>
         <a href="http://minscodingstory.tistory.com" target="_blank"><img th:src="@{/resources/images/tistory.png}" alt=""></a>

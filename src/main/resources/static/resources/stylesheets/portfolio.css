@@ -495,12 +495,17 @@ input, select, textarea {
     white-space: pre-line;
 }
 
-#projectForm > .project > .ul > li:last-child {
+/*#projectForm > .project > .ul > li:last-child {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+#projectForm > .project > .ul > .button {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#projectForm > .project > .ul > li > a {
+#projectForm > .project > .ul > .button > a {
     width: 10rem;
     height: 3rem;
     background-color: #C4DFDF;
@@ -513,12 +518,10 @@ input, select, textarea {
     align-items: center;
     justify-content: center;
 }
-#projectForm > .project > .ul > li > a:hover {
-    background-color: #fafafa;
-    color: black;
 
+#projectForm > .project > .ul > .button > .none {
+    cursor: not-allowed;
 }
-
 
 #etcForm {
     margin-left: 20rem;
@@ -529,6 +532,11 @@ input, select, textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#etcForm > h3 {
+    text-align: center;
+    white-space: pre;
 }
 
 #etcForm > div{

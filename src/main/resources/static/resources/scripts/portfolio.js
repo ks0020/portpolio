@@ -1,24 +1,5 @@
 const bodyElement = document.getElementById('body');
 
-
-window.addEventListener('resize', function () {
-
-    if (innerWidth <= 1100) {
-        bodyElement.querySelector('.fixed').style.visibility = 'hidden';
-    } else {
-        bodyElement.querySelector('.fixed').style.visibility = 'visible';
-    }
-
-    // if (innerWidth <= 1100) {
-    //     bodyElement.getElementById('etcForm').style.marginLeft = '0';
-    // } else {
-    //     bodyElement.getElementById('etcForm').style.marginLeft = '20rem';
-    // }
-
-});
-
-
-
 const text = document.querySelector(".hello_typing");
 const content = "안녕하세요!\n자신감 넘치는 신입개발자 이석민입니다. \n늘 도전하고, 그 도전을 성공으로 이끌겠습니다!                "
 let i = 0;
@@ -35,6 +16,17 @@ const typing = function () {
         i = 0;
     }
 };
+
+const adjustFontSize = function () {
+    if (window.innerWidth <= 1100) { // 작은 화면
+        text.style.fontSize = "1.5rem";
+    } else {
+        text.style.fontSize = "2rem"; // 기본 크기
+    }
+};
+
+window.addEventListener('resize', adjustFontSize);
+
 setInterval(typing, 150);
 
 const graphs = document.querySelectorAll('.graph-container ul');
@@ -113,3 +105,26 @@ dbBtn.onclick = () => {
     backContainer.classList.remove('visible');
     dbContainer.classList.add('visible');
 }
+
+// 윈도우 크기 반응형
+window.addEventListener('resize', function () {
+
+    // 메뉴와 프로필 이미지 숨기기/보이기
+    const fixedMenu = bodyElement.querySelector('.fixed');
+    const profileElements = bodyElement.querySelectorAll('.profile');
+
+    if (innerWidth <= 1100) {
+        fixedMenu.style.visibility = 'hidden';
+        for (const profile of profileElements) {
+            profile.style.display = 'none';
+        }
+    } else {
+        fixedMenu.style.visibility = 'visible';
+        for (const profile of profileElements) {
+            profile.style.display = 'block';
+        }
+    }
+});
+
+
+window.dispatchEvent(new Event('resize'));
